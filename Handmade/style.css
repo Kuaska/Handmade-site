@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    min-height: 100%;
+}
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #f2f2f2;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    transform: scale(1.05);
+    z-index: -2;
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+}
+a {
+    color: #ffb37a;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.55);
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+header b {
+    font-size: 18px;
+    color: #fff;
+}
+nav a {
+    margin-left: 16px;
+    font-size: 14px;
+}
+h1 {
+    font-size: 28px;
+    margin: 0 0 12px;
+    color: #fff;
+}
+h2 {
+    font-size: 20px;
+    margin: 0 0 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 8px;
+    color: #fff;
+}
+section,
+.panel {
+    background: rgba(0, 0, 0, 0.55);
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+.hero p {
+    color: #e0e0e0;
+}
+.btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 20px;
+    background: #b35a30;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.btn:hover {
+    background: #964a27;
+    text-decoration: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.06);
+    color: #f2f2f2;
+}
+.card b {
+    color: #fff;
+}
+.card p {
+    font-size: 13px;
+    color: #d8d8d8;
+    margin-top: 4px;
+}
+.price {
+    font-weight: bold;
+    margin-top: 8px;
+    color: #ffb37a;
+}
+ul {
+    padding-left: 20px;
+    color: #e0e0e0;
+}
+ul li {
+    margin-bottom: 6px;
+}
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 13px;
+    color: #ccc;
+    background: rgba(0, 0, 0, 0.55);
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
