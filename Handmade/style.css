@@ -200,7 +200,8 @@ ul {
 }
 
 ul li {
-    margin-bottom: 6px;
+    margin-bottom: 6px; 
+    margin-top: 0px;
 }
 
 /* Блок FAQ */
